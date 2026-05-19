@@ -129,13 +129,12 @@ if __name__ == "__main__":
     mae = mean_absolute_error(y, y_pred_all)
     mse = mean_squared_error(y, y_pred_all)
 
-    print("\n========== LOOCV RESULTS ==========")
     print(f"R2:  {r2:.4f}")
     print(f"MAE: {mae:.4f}")
     print(f"MSE: {mse:.4f}")
 
     with open("output.txt", "w") as f:
-        f.write("========== LOOCV RESULTS ==========\n")
+       
         f.write(f"R2:  {r2:.4f}\n")
         f.write(f"MAE: {mae:.4f}\n")
         f.write(f"MSE: {mse:.4f}\n")
